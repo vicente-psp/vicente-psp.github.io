@@ -1,0 +1,6 @@
+.page-in-construction {
+  height: 100%;
+  background-size: cover;
+  width: auto;
+  background-image: url(../../assets/construcao.png);
+}
