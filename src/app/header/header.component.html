@@ -1,11 +1,12 @@
-<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
-  <mat-toolbar color="primary" class="example-toolbar">
-    <!-- <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button> -->
+<div class="container-custom" [class.is-mobile-custom]="mobileQuery.matches">
+  <mat-toolbar class="toolbar-custom">
     <button mat-mini-fab
+        color="primary"
         aria-label="Menu"
         (click)="snavClick(snav)">
       <mat-icon>{{ menuIcon }}</mat-icon>
     </button>
+    <!--
     <h1 class="example-app-name"></h1>
     <span class="spacer"></span>
     <button mat-mini-fab
@@ -13,9 +14,10 @@
         aria-label="Contate-me">
       <mat-icon>contact_mail</mat-icon>
     </button>
+    -->
   </mat-toolbar>
 
-  <mat-sidenav-container class="example-sidenav-container" style="background-color: transparent;"
+  <mat-sidenav-container class="sidenav-container-custom" style="background-color: transparent;"
                          [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
