@@ -3,3 +3,19 @@
   background-size: contain;
   background-image: url(../../assets/construcao.png);
 }
+
+.card-custom {
+  margin-top: 50px;
+}
+
+.header-image-custom {
+  background-image: url(../../assets/profile.jpg);
+  background-size: cover;
+}
+
+.container-card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
